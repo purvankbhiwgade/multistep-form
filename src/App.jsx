@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "./App.css";
-import Steps from "./components/steps";
+import Steps from "./components/Steps";
 import CardOne from "./components/CardOne";
 import FormContextProvider from "./context/FormContextProvider";
 import CardTwo from "./components/CardTwo";
