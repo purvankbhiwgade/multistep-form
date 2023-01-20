@@ -1,0 +1,20 @@
+.step-no {
+    height: 32px;
+    width: 32px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state-off {
+    color: white;
+}
+
+.state-on {
+    color: hsl(213, 96%, 18%);
+    background: hsl(206, 94%, 87%);
+    border-color: hsl(206, 94%, 87%);
+}

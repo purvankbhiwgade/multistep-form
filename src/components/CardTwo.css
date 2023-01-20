@@ -1,0 +1,147 @@
+.plan-options {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.options {
+  flex-basis: 75px;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  background: none;
+  border: 1px solid hsl(229, 24%, 87%);
+  border-radius: 8px;
+}
+
+.option {
+  flex-direction: column;
+  gap: 5px;
+  justify-content: start;
+  text-align: left;
+}
+
+.yearly > .price {
+  /* text-align: left; */
+  margin-bottom: 5px;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.text-color-pastel-blue {
+  color: hsl(228, 100%, 84%);
+}
+
+.text-color-light-gray {
+  color: hsl(229, 24%, 87%);
+}
+
+.text-color-pastel-blue {
+  color: hsl(228, 100%, 84%);
+}
+
+.text-color-purplish-blue {
+  color: hsl(243, 100%, 62%);
+}
+
+.text-color-marine-blue {
+  color: hsl(213, 96%, 18%);
+}
+
+.text-color-cool-gray {
+  color: hsl(231, 11%, 63%);
+}
+
+.fs-75 {
+  font-size: 0.75rem;
+}
+
+.fs-875 {
+  font-size: 0.875rem;
+}
+
+.fs-1-500 {
+  font-size: 1.5rem;
+}
+
+.plan-toggle {
+  background: hsl(217, 100%, 97%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 35px;
+  padding: 12px;
+  margin-top: 25px;
+  border-radius: 8px;
+}
+
+.outline {
+  outline: 1px solid hsl(213, 96%, 18%);
+}
+
+button:focus,
+button:hover {
+  outline: 1px solid hsl(213, 96%, 18%);
+  /* outline: none; */
+}
+
+.ls-1perc {
+  letter-spacing: 0.01rem;
+}
+
+.ls-10perc {
+  letter-spacing: 0.1rem;
+}
+
+.list, .total-add-ons {
+  gap: 14px;
+}
+
+.list {
+  background: hsl(217, 100%, 97%);
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 8px;
+}
+
+.total {
+  border-bottom: 1px solid hsl(231, 11%, 63%);
+  padding-bottom: 12px;
+}
+
+.total-price {
+  padding: 0 16px;
+}
+
+.gap-4 {
+  gap: 4px;
+}
+
+.thank-you {
+  line-height: 25px;
+  text-align: center;
+  gap: 18px;
+  padding: 67px 24px;
+}
+
+@media (min-width: 675px) {
+  .plan-options {
+    flex-direction: row;
+  }
+
+  .options {
+    flex-direction: column;
+    flex: 1;
+  }
+}

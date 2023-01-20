@@ -1,0 +1,96 @@
+.flex-1 {
+  flex: 1;
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 35px;
+}
+
+/* deleting the default checkbox */
+.checkbox input {
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* .checkbox:hover input ~ .checkmark {
+    background-color: red;
+    color: red;
+} */
+
+/* .checkbox input:checked ~ .checkmark {
+  background-color: hsl(213, 96%, 18%);
+  background-color: red;
+} */
+
+/* styling the fake checkbox */
+/* add the blue color when it is checked */
+.checkbox input:checked ~ .checkmark {
+  background-color: hsl(213, 96%, 18%);
+  border: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 1px solid hsl(231, 11%, 63%);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+
+
+
+
+/* show the checkmark when checked */
+.checkbox input:checked ~ .checkmark::after {
+  content: "";
+  display: block;
+}
+
+.checkbox .checkmark::after {
+  content: "";
+  left: 5px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: 1px solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Slider CSS Ends */
+.add-ons {
+  gap: 12px;
+}
+
+.add-on-option {
+  padding: 12px 15px;
+  border: 1px solid hsl(231, 11%, 63%);
+  border-radius: 8px;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.add-on-options-desc {
+  gap: 4px;
+}
